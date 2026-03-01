@@ -1,0 +1,95 @@
+.sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eef2f7;
+    padding: 25px 15px;
+    overflow: hidden;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+     background-color: #dbe4ff;
+    color: #2c2f36;
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
+    animation: fadeIn 1.5s;
+}
+
+.recent-title {
+    /* margin-top: 30px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+  
+  padding-right: 5px;     /* space for scrollbar */
+}
+
+.recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #2c2f36;
+    cursor: pointer;
+    /* background-color: #fff; */
+
+}
+
+.recent-entry:hover {
+     background-color: #e3e9f2;
+
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;           /* important */
+}
+/*--------------------------- 2nd part----------------------------- */
+.loader hr {
+    background: linear-gradient(to right, #4f6ef7, #ffffff, #4f6ef7);
+}
